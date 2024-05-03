@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=0.6">
+    </head>
+<style>
+.services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width: 1600px;
+    padding: 80px 0;
+}
+.services h2{
+    font-size: 50px;
+     color: #410e0e;
+}
+.services_cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    position: inherit;
+}
+.services_card{
+    width: 35%;
+    height: 200px;
+    background-color: hwb(294 27% 43% / 0.185);
+    color: #000;
+    border-radius: 20px;
+    padding: 30px;
+    position: relative;
+    z-index: 1;
+    transition: all .5s ease-in-out;
+    overflow: hidden;
+}
+.services_card::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0;
+    z-index: 2;
+    background-color: hwb(294 27% 43% / 0.185);
+}
+.services_card:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -100%;
+    top: 0;
+    -webkit-text-stroke: 3px hwb(100 17% 81%);
+    z-index: 2;
+    transition: all .7s ease-in-out;
+}
+.services_card:hover{
+ 
+    transform: scale(1.05);
+}
+.services_card:hover:after{
+    left: 0;
+}
+.services_card h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.backgroundvid{
+    position: absolute;
+    z-index: -1;
+    background-size: cover;
+}
+
+.content h1{
+    color: #b322f750;
+    font-family: Poppins, sans-serif;
+    border: 0px solid;
+    font-size: 150px;
+    font-weight: 900;
+    margin-bottom: 199px;
+    transition: 1s;
+    position: relative; top: -55px;
+}
+.content h1:hover {
+    -webkit-text-stroke: 3px hwb(100 17% 81%);
+    color: transparent;
+    transform: scale(1.1);
+    transform: translateY(-25px);
+    position: relative; top: 50px;
+}
+.content{
+    display: grid;
+    place-items: center;
+}
+.services_card p{color: azure;
+}
+.services_card h3{color: azure;
+}
+.fixed-element {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+        }
+.fixednato {
+    max-width: 15%;
+    opacity: 0.5;
+}
+
+</style>
+<section>
+    <div class="fixed-element">
+        <image class ="fixednato"></image>
+        <a href="anokayato.html">
+       <img src = "vid\returnbutton.png">
+    </a>
+    </div>
+    <div class = "nero">
+        <video class="backgroundvid" autoplay loop muted>
+            <source src="vid\Synthwave.mp4">
+        </video>
+        <div class="content" id="content">
+            <h1>C Y B E R N O Z E </h1>
+            
+            <div class="services_cards">
+                
+                <div class="services_card">
+                    <h3>About me</h3>
+                    <p> I'm Sunga, Daniel Carlo from Bacoor, Cavite. Currently taking the Bachelor Science of Information Technology (BSIT).</p>
+                </div>
+                <div class="services_card">
+                    <h3>Hobbies</h3>
+                    <p>My Hobbies are playing video games, playing instruments such as a guitar, piano, drums and etc. Additionally, I also enjoy playing sports such as basketball and volleyball.</p>
+                </div>
+                <div class="services_card">
+                    <h3>Objectives</h3>
+                    <p>One of my goals is to develop critical thinking and analytical skills to solve complex IT problems. Additionally, I wanna gain a strong foundation in core IT concepts like networking, operating systems, and database management.</p>
+                </div>
+                
+        </div>
+    </div>
+    </section>
+
+</html>

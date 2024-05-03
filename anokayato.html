@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+    
+<style>
+.content{
+    display: grid;
+    place-items: center;
+    
+}
+.content h1{
+    color: rgba(74, 82, 97, 0.795);
+    font-family: Poppins, sans-serif;
+    border: 0px solid;
+    font-size: 150px;
+    font-weight: 900;
+    margin-bottom: 199px;
+    transition: 1s;
+    position: relative; top: -120px;
+   
+   
+}
+.content h1:hover {
+    -webkit-text-stroke: 3px hsl(200, 6%, 90%);
+    color: transparent;
+    transform: scale(1.1);
+    transform: translateY(-25px);
+    position: relative; top: -50px;
+   
+    
+    
+}
+
+.zero{
+    position: relative;
+    margin-bottom: 145px;
+    }
+
+
+.content a{
+    text-align: center;
+    text-decoration: none;
+    word-spacing: 1px;
+    font-size: 40px;
+    font-weight: 700;
+    width: 300px;
+    color: rgba(74, 82, 97, 0.795);
+    transition: 0.2s;
+    position: relative; top: 375px;
+}
+.content a:hover{
+    color: hsl(184, 32%, 90%);
+    transform: translateY(-20px);
+}
+
+.backgroundvid{
+    position: absolute;
+    z-index: -1;
+}
+.jovit{
+    
+    position: absolute; top: 1120px
+}
+.about{
+    position: relative; top: 1500px
+}
+.fixed-element {
+    position: fixed;
+            top: 10px;
+            left: 10px;
+            z-index: 1;
+        }
+.fixednato {
+    opacity: 0;
+}
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.css"
+        integrity="sha512-U9Y1sGB3sLIpZm3ePcrKbXVhXlnQNcuwGQJ2WjPjnp6XHqVTdgIlbaDzJXJIAuCTp3y22t+nhI4B88F/5ldjFA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>CUBEZONE</title>
+</head>
+<div class="fixed-element">
+    <image class ="fixednato"></image>
+    <a href="index.html">
+   <img src = "vid\logout.png">
+    </div>
+</a>     
+<body>   
+    <section>
+   <div class="zero">
+              <video class="backgroundvid" autoplay loop muted>
+            <source src="vid\cube.mp4">
+        </video>
+            <div class="content">
+            <h1>
+                 S U N G A 
+            </h1>
+        </div>
+        <br>
+        <div class="content">
+            <a href="anonadan.html">A B O U T  M E</a>
+        </div>
+    </section>
+
+</html>
